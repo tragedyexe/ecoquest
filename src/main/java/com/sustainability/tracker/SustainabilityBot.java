@@ -12,6 +12,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 public class SustainabilityBot extends TelegramLongPollingBot {
 @Autowired private UserRepository userRepository;
 Map<Long, String> userStates = new HashMap<>();
+@Autowired
 private AiVerificationService aiService;
     @Override
 public String getBotUsername() {
